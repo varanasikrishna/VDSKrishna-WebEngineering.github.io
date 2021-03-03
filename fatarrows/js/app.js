@@ -19,21 +19,21 @@ console.log(phraseSplitterES5("ES5 features"));
 const phraseSplitterES6 = phrase => phrase.split(' ');
 console.log(phraseSplitterES6("ES6 Awesomeness"));
 
-var square = function(a) {
+var squareEs5 = function(a) {
     return a*a;
 };
-console.log(square(2));
+console.log(squareEs5(2));
 
-let square = x => x*x;
-console.log(square(10));
+let squareEs6 = x => x*x;
+console.log(squareEs6(10));
 
-var add = function(a,b) {
+var addEs5 = function(a,b) {
     return a+b;
 };
-console.log(add(2,4));
+console.log(addEs5(2,4));
 
-let add = (a,b) => a+b;
-console.log(add(3,6));
+let addEs6 = (a,b) => a+b;
+console.log(addEs6(3,6));
 
 setTimeout(function(){
     console.log("Hello!")
@@ -100,15 +100,16 @@ const smartPhones = [
 
 // ES5
 
-var prices = smartPhones.map(function(smartPhone) {
+var pricesEs5 = 
+smartPhones.map(function(smartPhone) {
     return smartPhone.price;
 });
-console.log(prices);
+console.log(pricesEs5);
 
 //ES6
 
-const prices = smartPhones.map(smartphone => smartphone.price);
-console.log(prices);
+const pricesEs6 = smartPhones.map(smartphone => smartphone.price);
+console.log(pricesEs6);
 
 // this keyword
 var x = function(){
