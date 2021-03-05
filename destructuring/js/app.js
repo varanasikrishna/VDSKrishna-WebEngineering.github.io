@@ -87,13 +87,13 @@ console.log("The " + species + " says " + sound + "!");
 
 // 6. pass an object as a function's parameters
 
+function makesound(options) {
+  console.log("The " + options.species + " says " + options.sound + "!");
+}
+
 // options object
 makesound({
   species: "dog",
   weight: 23,
   sound: "woof",
 });
-
-function makesound(options) {
-  console.log("The " + options.species + " says " + options.sound + "!");
-}

@@ -77,10 +77,33 @@ const person = {
 // console.log(first, second);
 // console.log(theRest);
 
-function doesEverythingPossibleTo2Numbers(a, b) {
-  return [a + b, a - b, a * b, a / b, a % b, Math.pow(a, b), a == b];
-}
+// function doesEverythingPossibleTo2Numbers(a, b) {
+//   return [a + b, a - b, a * b, a / b, a % b, Math.pow(a, b), a == b];
+// }
 
-let [add, sub, mul, div, mod, pow, eq] = doesEverythingPossibleTo2Numbers(4, 2);
+// let [add, sub, mul, div, mod, pow, eq] = doesEverythingPossibleTo2Numbers(4, 2);
 
-console.log(add, sub, mul, div, mod, pow, eq);
+// console.log(add, sub, mul, div, mod, pow, eq);
+
+// let [add, sub, ...Rest] = doesEverythingPossibleTo2Numbers(6, 3);
+// console.log(add, sub);
+// console.log(Rest);
+
+// const animal = {
+//   species: "dog",
+//   age: 4,
+//   sound: "woof",
+// };
+// const { species, sound } = animal;
+
+// console.log(`The ${species} makes ${sound}!`);
+
+// makeSound({
+//   species: "dog",
+//   age: 5,
+//   sound: "woof",
+// });
+
+// function makeSound(options) {
+//   console.log(`The ${options.species} makes ${options.sound}!`);
+// }
